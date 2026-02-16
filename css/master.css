@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  background-color: #1D546D;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: #F3F4F4;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logoID{
+  margin: 6rem 0 0;
+  width: clamp(18.75rem, 80vw, 50rem);
+  border-radius: 50px;
+}
+
+#sloganID {
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+.bio{
+  font-size: clamp(1rem, 4vw, 4rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 1rem 0 1rem;
+}
+
+main{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profilePhotoID{
+  margin: 4rem 0 0;
+  width: clamp(6rem, 25vw, 10rem);
+  border-radius: 70px;
+}
+
+.socialMedia img{
+  width: 100%;
+}
+
+.socialMedia a{
+  display: flex;
+  justify-content: center;
+  width: 3rem;
+  margin: 2rem 0 0;
+}
+
+.socialMedia{
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
+}
+
+.socialMedia img{
+    border-radius: 15px;
+    width: 4rem;
+}
+
+.contacts{
+  min-height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.contactButtons{
+  width: 80%;
+  height: 5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #061E29;
+  background-color: #F3F4F4;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  align-content: center;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+
+  cursor: pointer;
+}
+
+.LogoID{
+   width: 4rem;
+   border-radius: 30px;
+ }
+
+
+ .buttonText{
+   margin: 0;
+   padding: 0;
+   max-width: 32rem;
+   text-align: center;
+   justify-self: center;
+   font-size: clamp(1rem, 3vw, 5rem);
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+   font-style: normal;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 3rem 0 0;
+}
+
+.buttonDownload{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #061E29;
+  background-color: #F3F4F4;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.contactButtons:active, .buttonDownload:active{
+  box-shadow: 0px 5px 1.5px black;
+  transform: translateY(5px);
+}
+@media (min-width: 768px) {
+  main {
+    margin-inline: auto;
+  }
+
+  .socialMedia {
+    width: min(50%, 20rem);
+  }
+
+  .contacts, .footer{
+    width: 100%;
+  }
